@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 tron.setR(r);
                 Double chuvi1 = tron.chuVi();
                 Double dientich1 = tron.dienTich();
-                chuvi.setText(chuvi1.toString());
-                dientich.setText(dientich1.toString());
+                chuvi.setText("Chu vi: "+chuvi1.toString());
+                dientich.setText("Diện tích: "+dientich1.toString());
             }
         });
         nutChuyen.setOnClickListener(new View.OnClickListener() {
