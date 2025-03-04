@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Đặt</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function NhanKQ(cv, dt){
+            document.getElementById('chuvi').innerHTML = "Chu vi: " + cv;
+            document.getElementById('chuvi').innerHTML = "Diện tích: " + dt;
+        }
+        function tinhtoan(){
+            var r = document.getElementById('r').value;
+
+            window.Android.xuly(r);
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="info">
+    <label><strong>Họ và Tên:</strong> NGUYEN BA TRUNG</label><br>
+    <label><strong>MSSV:</strong> K215480106067</label><br>
+    <label><strong>Email:</strong> tn1192003@gmail.com</label><br>
+    <label><strong>Số điện thoại:</strong> 0862745043</label><br>
+    <label><strong>Địa chỉ:</strong> QUANG TRUNG - TÚC DUYÊN - ĐẠI TỪ- THÁI NGUYÊN</label>
+</div>
+
+
+<h2>Tính Chu Vi và Diện Tích Hình Chữ Nhật</h2>
+<label >Chiều dài:</label>
+<input type="number" id="r" placeholder="Nhập bán kính"><br><br>
+
+<button onclick="tinhtoan()">Tính</button>
+<p id="chuvi"></p>
+<p id="dientich"></p>
+
+<img src="anh1.jpg">
+
+<video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/XM7V7PQPNx8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+</iframe>
+
+</body>
+</html>
